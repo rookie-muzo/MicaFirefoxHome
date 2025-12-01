@@ -1,0 +1,48 @@
+@namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
+
+/* Make content area and ALL browser elements transparent*/
+#content,
+#content > *,
+#browser,
+browser,
+browser[type="content-primary"],
+browser[type="content"],
+browser[type="content-primary"] > *,
+browser[type="content"] > * {
+  background: transparent !important;
+  background-color: transparent !important;
+  appearance: none !important;
+  -moz-appearance: none !important;
+}
+
+/* Target the browser element more specifically */
+#content > browser,
+#browser,
+#appcontent > #content > browser,
+#appcontent browser {
+  background: transparent !important;
+  background-color: transparent !important;
+  background-image: none !important;
+  appearance: none !important;
+  -moz-appearance: none !important;
+}
+
+/* Make sure the appcontent container is also transparent */
+#appcontent,
+#appcontent > * {
+  background: transparent !important;
+  background-color: transparent !important;
+  appearance: none !important;
+  -moz-appearance: none !important;
+}
+
+/* Target the actual page display area - try all possible selectors */
+tabbrowser,
+#tabbrowser-tabpanels,
+.tabbrowser-tabpanels,
+.tabbrowser-tabpanels > * {
+  background: transparent !important;
+  background-color: transparent !important;
+  appearance: none !important;
+  -moz-appearance: none !important;
+}

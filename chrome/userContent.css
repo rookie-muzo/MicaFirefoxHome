@@ -1,0 +1,152 @@
+/* Make Firefox Home (New Tab) page completely transparent for Mica effect */
+@-moz-document url("about:newtab"), url("about:home"), url-prefix("about:newtab"), url-prefix("about:home") {
+  /* Base elements - make everything transparent */
+  html {
+    background: transparent !important;
+    background-color: transparent !important;
+  }
+  
+  body,
+  body.activity-stream {
+    background: transparent !important;
+    background-color: transparent !important;
+    background-image: none !important;
+  }
+  
+  /* Root container and all divs */
+  #root,
+  #root > *,
+  body > * {
+    background: transparent !important;
+    background-color: transparent !important;
+    background-image: none !important;
+  }
+  
+  /* All divs and sections in the new tab page */
+  div,
+  section,
+  main,
+  article,
+  aside {
+    background: transparent !important;
+    background-color: transparent !important;
+    background-image: none !important;
+  }
+  
+  /* Override any inline styles or computed backgrounds */
+  [style*="background"],
+  [style*="background-color"] {
+    background: transparent !important;
+    background-color: transparent !important;
+  }
+  
+  /* Specific new tab page elements */
+  .outer-wrapper,
+  .main-content,
+  .search-wrapper,
+  .search-handoff-button,
+  .top-sites-list,
+  .top-site-outer,
+  .top-site,
+  .section-top-sites,
+  .section-highlights,
+  .section-pocket,
+  .card,
+  .tile,
+  .ds-card,
+  .ds-card-base,
+  .inner-wrapper,
+  .content,
+  .container,
+  .section,
+  .panel,
+  .wrapper,
+  .activity-stream,
+  .newtab-customize-button,
+  .newtab-search-container,
+  .newtab-search-inner-wrapper,
+  .newtab-search-textbox,
+  .newtab-search-dropdown,
+  .newtab-icon,
+  .newtab-cell,
+  .newtab-site,
+  .newtab-link,
+  .newtab-title {
+    background: transparent !important;
+    background-color: transparent !important;
+    background-image: none !important;
+  }
+  
+  /* Remove box shadows */
+  body,
+  #root,
+  .outer-wrapper,
+  .main-content,
+  div {
+    box-shadow: none !important;
+  }
+  
+  /* Make sure search bar background is transparent but keep it functional */
+  input,
+  input[type="text"],
+  input[type="search"],
+  .search-wrapper input {
+    background: rgba(255, 255, 255, 0.1) !important;
+    background-color: rgba(255, 255, 255, 0.1) !important;
+  }
+  
+  /* Hide the customize button and menu on new tab page */
+  menu.personalizeButtonWrapper,
+  .personalizeButtonWrapper,
+  .personalize-button,
+  button.personalize-button,
+  .customize-menu,
+  .customize-menu-animate-wrapper {
+    display: none !important;
+  }
+  
+  /* Hide the customize button labels */
+  label[data-l10n-id="newtab-customize-panel-icon-button-label"] {
+    display: none !important;
+  }
+  
+  /* Hide the div with the edit icon that immediately follows each label */
+  label[data-l10n-id="newtab-customize-panel-icon-button-label"] + div {
+    display: none !important;
+  }
+  
+  /* Hide the edit icon directly (backup in case structure is different) */
+  img[src*="edit-outline.svg"] {
+    display: none !important;
+  }
+}
+
+/* OPTIONAL: Make regular websites opaque
+   By default, the browser element is transparent which allows the Mica effect
+   to show through on websites with transparent backgrounds. If you want to
+   prevent this and only have transparency on the new tab page, uncomment
+   the section below.
+   To enable: Remove the comment markers around the @-moz-document block below
+   To disable: Add comment markers back around the @-moz-document block below */
+
+
+/*@-moz-document url-prefix("http://"), url-prefix("https://") {
+  html {
+    background: #ffffff !important;
+    background-color: #ffffff !important;
+  }
+  
+  body {
+    background: #ffffff !important;
+    background-color: #ffffff !important;
+  }
+  
+  html[data-theme="dark"],
+  body[data-theme="dark"],
+  html.dark,
+  body.dark {
+    background: #1a1a1a !important;
+    background-color: #1a1a1a !important;
+  }
+}
+*/
