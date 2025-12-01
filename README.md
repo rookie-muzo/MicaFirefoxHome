@@ -2,7 +2,11 @@
 
 <img src="https://github.com/user-attachments/assets/b2e34840-907a-4d0c-b83d-cf6b58a4ece4" alt="image" width="700"/>
 
-Firefox CSS theme to match Windows 11 with transparent new tab page and Mica effect.
+Firefox CSS theme to match Windows 11 with transparent new tab page and Mica effect
+
+Tested working on Windows 11 25H2.
+
+I sorta slopped this one together just for myself so don't expect many updates.
 
 ## Setup Instructions
 
