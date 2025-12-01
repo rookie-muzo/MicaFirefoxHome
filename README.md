@@ -6,6 +6,8 @@ Firefox CSS theme to match Windows 11 with transparent new tab page and Mica eff
 
 Tested working on Windows 11 25H2.
 
+Essentially just makes the new tab / "Firefox Home" page transparent, to make it completely clutter free disable everything under "Firefox Home content" in about:preferences#home.
+
 I sorta slopped this one together just for myself so don't expect many updates.
 
 ## Setup Instructions
