@@ -8,12 +8,7 @@ browser,
 browser[type="content-primary"],
 browser[type="content"],
 browser[type="content-primary"] > *,
-browser[type="content"] > * {
-  background: transparent !important;
-  background-color: transparent !important;
-  appearance: none !important;
-  -moz-appearance: none !important;
-}
+
 
 /* Target the browser element more specifically */
 #content > browser,

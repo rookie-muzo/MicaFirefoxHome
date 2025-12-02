@@ -120,33 +120,3 @@
     display: none !important;
   }
 }
-
-/* OPTIONAL: Make regular websites opaque
-   By default, the browser element is transparent which allows the Mica effect
-   to show through on websites with transparent backgrounds. If you want to
-   prevent this and only have transparency on the new tab page, uncomment
-   the section below.
-   To enable: Remove the comment markers around the @-moz-document block below
-   To disable: Add comment markers back around the @-moz-document block below */
-
-
-/*@-moz-document url-prefix("http://"), url-prefix("https://") {
-  html {
-    background: #ffffff !important;
-    background-color: #ffffff !important;
-  }
-  
-  body {
-    background: #ffffff !important;
-    background-color: #ffffff !important;
-  }
-  
-  html[data-theme="dark"],
-  body[data-theme="dark"],
-  html.dark,
-  body.dark {
-    background: #1a1a1a !important;
-    background-color: #1a1a1a !important;
-  }
-}
-*/
